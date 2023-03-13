@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management System - Computer Science Department</title>
+    <style>
+        body {
+    background-color: rgb(137, 219, 215);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background-color: #555;
+  }
+  
+  /* Dropdown button style */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.book {
+  width: 25%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+}
+
+.book h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.book p {
+  margin: 5px 0;
+}
+
+.btn {
+  background-color:lightsalmon;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #005DA2;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>E- LIBRARY MANGAMENT SYSTEM  </h1>
+      <img src="https://img.icons8.com/dusk/1x/library.png"   style="height:80px; width: 80px;" >
+          <nav>
+      <ul>
+          <li><a href="file:///C:/Users/Administrator/Desktop/manoj/home.html">Home</a></li>
+          <li><a href="file:///C:/Users/Administrator/Desktop/manoj/index.html">Login</a></li>
+          <li class="dropdown">
+            <a href="#">Departments</a>
+            <div class="dropdown-content">
+              <a href="file:///C:/Users/Administrator/Desktop/manoj/civil.html">Civil Engineering</a>
+              <a href="file:///C:/Users/Administrator/Desktop/manoj/mech.html">Mechanical Engineering</a>
+              <a href="file:///C:/Users/Administrator/Desktop/manoj/eee.html">Electrical Engineering</a>
+              <a href="file:///C:/Users/Administrator/Desktop/manoj/cs.html">Computer  Engineering</a>
+            </div>
+          </li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+    <main>
+      <h2>Electrical Engineering Department</h2>
+      <p>Welcome to the Electrical Engineering  Department page of our library management system. Here, you can find information about the books available in our collection, as well as the books currently checked out by students and faculty members.</p>
+      <h3>Books Available in the Electrical Engineering Department</h3>
+    </main>
+    <div class="book-container">
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/510aRWHcWSL._SX368_BO1,204,203,200_.jpg" alt="Book "style="height: 300px; width: 300px;">
+        <h3>Modern Control Engineering </h3>
+        <p>Author: Katsuhiko Ogata </p>
+        <p>Publisher: PRENTICE HALL </p>
+        <a href="https://a.co/d/gwTGEZB" target="_blank" class="btn">Buy on Amazon</a>
+      </div>
+      
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/51jyE7tQ+5L._SX313_BO1,204,203,200_.jpg" alt="Book 2"style="height: 300px; width: 300px;">
+        <h3>Electric Power Systems: A Conceptual Introduction </h3>
+        <p>Author:  Alexandra von Meier</p>
+        <p>Publisher: Wiley</p>
+        <a href="https://a.co/d/06H1AHP" target="_blank" class="btn">Buy on Amazon</a>
+      </div>
+      
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/51FH01dF13L._SX350_BO1,204,203,200_.jpg" alt="Book 3"style="height: 300px; width: 300px;">
+        <h3>Principles of Power Systems</h3>
+        <p>Author: V. K. Mehta and Rohit Mehta</p>
+        <a href="https://a.co/d/bSrwqiA" target="_blank" class="btn">Buy on Amazon</a>
+      </div>
+      
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/51Hm29VqBNL._SX258_BO1,204,203,200_.jpg" alt="Book 4"style="height: 300px; width: 300px;">
+        <h3>Microelectronic Circuits </h3>
+        <p>Author: Adel S. Sedra and Kenneth C. Smith</p>
+        <p>Publisher: </p>
+        <a href="https://a.co/d/2iltToC" target="_blank" class="btn">Buy on Amazon</a>
+      </div>
+      
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/51htb4zjWbL._SX394_BO1,204,203,200_.jpg" alt="Book 5"style="height: 300px; width: 300px;">
+        <h3>Electrical Engineering: Principles and Applications </h3>
+        <p>Author: Allan R. Hambley </p>
+        <p>Publisher:Peasron </p>
+        <a href="https://a.co/d/gs3uuwn" target="_blank" class="btn">Buy on Amazon</a>
+      </div>
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/41XBXGuKJnL._SX327_BO1,204,203,200_.jpg" alt="Book 6"style="height: 300px; width: 300px;">
+        <h3>Electric Machinery Fundamentals</h3>
+        <p>Author:  Stephen J. Chapman.</p>
+        <p>Publisher:  International edition</p>
+        <a href="https://a.co/d/9SrHszM" target="_blank" class="btn">Buy on Amazon</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Library Management System</p>
+    </footer>
+  </body>
+</html>
